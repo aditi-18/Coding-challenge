@@ -1,0 +1,25 @@
+{
+    "name": "coding-challenge",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"npm run dev --prefix coding-challenge-api\" \"npm start --prefix coding-challenge-ui\"",
+        "test": " cd coding-challenge-api/src && npm test server.test.js"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.(js|ts)$": "babel-jest"
+        },
+        "testEnvironment": "node",
+        "transformIgnorePatterns": []
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@babel/plugin-syntax-jsx": "^7.24.6",
+        "@babel/plugin-transform-modules-commonjs": "^7.24.6",
+        "@babel/preset-env": "^7.24.6",
+        "@babel/preset-react": "^7.24.6",
+        "babel-jest": "^29.7.0",
+        "concurrently": "^6.5.1"
+    }
+}
