@@ -36,6 +36,9 @@ This coding challenge is designed to assess how you approach and solve a problem
 
 ## Installations
 
+- `git clone https://github.com/aditi-18/Coding-challenge.git`
+- `cd coding-challenge`
+
 ### Run the backend
  
  - `cd coding-challnge-api`
